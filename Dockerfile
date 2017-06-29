@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 RUN apt-get update \
  && apt-get install -y --no-install-recommends python-pip \
- && apt-get install python-setuptools \
+ && apt-get install -y python-setuptools \
  && apt-get -y --purge autoremove \
  && rm -rf /var/lib/apt/lists/* 
 
